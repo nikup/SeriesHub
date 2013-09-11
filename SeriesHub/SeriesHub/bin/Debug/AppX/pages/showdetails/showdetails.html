@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>showdetails</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="showdetails.css" rel="stylesheet" />
+    <script src="showdetails.js"></script>
+</head>
+<body data-win-bind="style.backgroundImage: images.fanart">
+    <div id="show-seasons-container" data-win-control="WinJS.Binding.Template">
+        <div class="show-seasons-template list-view-position">
+            <div class="list-view-image-wrapper">
+                <img class="list-view-image" src="#" data-win-bind="src: images.poster" />
+            </div>
+           <div class="element-description-bottom">
+                <span>Season </span>
+                <span data-win-bind="innerHTML: season"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="showdetails fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span id="loading-page-ring">
+                    <label class="progress-ring-text">
+                        <progress class="win-ring with-text win-large"></progress>
+                        Loading . . . 
+                    </label>
+                </span>
+                <span id="show-name-title" class="pagetitle hidden" data-win-bind="innerHTML: title"></span>
+            </h1>
+        </header>
+        <section id="show-details-section" class="hidden" aria-label="Main content" role="main" >
+            <div id="show-details-wrapper" >
+                <div class="show-rating">
+                    <span>Rating:</span>
+                    <span data-win-bind="innerHTML: ratings.percentage"></span>
+                    <span>%</span>
+                    <img src="../../images/fav_heart.png" height="15" />
+                    <span data-win-bind="innerHTML: ratings.votes"></span>
+                    <span>votes</span>
+                </div>
+                <div class="show-genres">
+                    <span>Genres:</span>
+                    <span data-win-bind="innerHTML: genres"></span>
+                </div>
+                <div class="show-network">
+                    <span>Network:</span>
+                    <span data-win-bind="innerHTML: network"></span>
+                </div>
+                <div class="show-year">
+                    <span>Year:</span>
+                    <span data-win-bind="innerHTML: year"></span>
+                </div>
+                <div class="show-runtime">
+                    <span>Runtime:</span>
+                    <span data-win-bind="innerHTML: runtime"></span>
+                </div>
+                <div class="show-airtime">
+                    <span>Air time:</span>
+                    <span data-win-bind="innerHTML: air_day"></span>
+                    <span data-win-bind="innerHTML: air_time"></span>
+                </div>
+                <div class="show-next-episode">
+                    <span class="section-title">Next episode: </span>
+                    <span data-win-bind="innerHTML: next_episode.title"></span>
+                    <span>Season:</span>
+                    <span data-win-bind="innerHTML: next_episode.season"></span>
+                    <span>Episode:</span>
+                    <span data-win-bind="innerHTML: next_episode.episode"></span>
+                </div>
+                <div class="show-overview">
+                    <span>Overwiew:</span>
+                    <span data-win-bind="innerHTML: overview"></span>
+                </div>
+            </div>
+
+            <div id="show-seasons-list-view" data-win-control="WinJS.UI.ListView"
+                data-win-options="{
+                    itemTemplate: select('#show-seasons-container'),
+                    selectionMode: 'none'
+                }">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

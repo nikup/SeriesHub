@@ -1,0 +1,37 @@
+﻿section {
+}
+
+#show-details-wrapper {
+    width: 80%;
+    height: 48%;
+    background-color: rgba(147, 147, 147, 0.61);
+    overflow: auto;
+    padding: 5px 20px 5px 5px;
+}
+
+#show-seasons-list-view {
+    height: 50%;
+}
+
+.big-poster {
+    height: 90%;
+}
+
+.showdetails section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .showdetails section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .showdetails section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

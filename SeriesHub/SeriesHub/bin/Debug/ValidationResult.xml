@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="2.2" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsStore" PUBLISHER_DISPLAY_NAME="ExPRESS" OSVERSION="6.2.9200.0" OS="Microsoft Windows 8" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1026" VALIDATION_TYPE="CommandLine" ReportGenerationTime="10.09.2013 г. 12:17:25" ID="e18797114fac3e3cfdaa7ddbabb70ff9">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 Windows test" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="OS version checking test" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to system restart manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="47" NAME="App launch tests" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:22s.17ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:05s.08ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="App manifest compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:02s.53ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.78ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private Code Signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.20ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:02s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications.">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.54ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="60" NAME="Optimized Binding References" DESCRIPTION="When using bindings, WinJS.Binding.optimizeBindingReferences should be set to true to optimize the memory usage." EXECUTIONTIME="00h:00m:01s.62ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="43" NAME="Performance launch" DESCRIPTION="Application should have a responsive launch time with reasonable CPU, File IO and Memory usage" EXECUTIONTIME="00h:02m:49s.75ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="44" NAME="Performance suspend" DESCRIPTION="Application should have a responsive suspend with reasonable CPU and File IO usage" EXECUTIONTIME="00h:02m:23s.39ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The Appx Package Manifest should have valid resources defined in the resources.pri file, as per the Appx Packaging Specification and Appx Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources validation" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.60ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.72ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.53ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.95ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D feature level support" RATIONALE="Applications must render content on Direct3D feature level 9.1 hardware.">
+      <TEST INDEX="51" NAME="Direct3D feature level support" DESCRIPTION="Applications must render content on Direct3D feature level 9.1 hardware." EXECUTIONTIME="00h:00m:01s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special Use Capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.47ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute test" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.05ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Type location test" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:01s.10ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity test" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.65ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness test" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.59ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness test" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:01s.73ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Properties test" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.61ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="29331ExPRESS.SeriesHub" Type="Application" Source="AppxPackage" Publisher="CN=96AAC5CD-6AB5-4606-96E9-145E0BADAB77" Version="2.0.0.5" Language="1033" OnSystemDrive="true" RootDirPath="C:\Program Files\WindowsApps\29331ExPRESS.SeriesHub_2.0.0.5_neutral__216h21f6mqzr0" PathEvidenceId="0x1cf5" RNP="0x1" DNP="0xd" EvidenceId="0x1cf5" Id="000004c7d42877fa89b49d14f761edaa37eb00000904">
+        <Indicators>
+          <DirectoryIndicators>
+            <Directory Name="this-week" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\this-week" RNP="0x9" DNP="0xb" UniqueId="0x1d1b" Id="0000c07923aa73fca56bae571ae02534851010ac43ff" />
+            <Directory Name="home" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\home" RNP="0x9" DNP="0xb" UniqueId="0x1d06" Id="00007eb0baafbaaf8336d49e7c3224114d4f05b6a749" />
+            <Directory Name="loginsettings" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\loginsettings" RNP="0x9" DNP="0xb" UniqueId="0x1d0c" Id="00003746fcd154841dced4e3aa2a65dd5a4191516eec" />
+            <Directory Name="29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0" RNP="0x9" DNP="0xb" UniqueId="0x1cf6" Id="00003ad4fbbd0466652a4e4659866bbabc613e55fb62" />
+            <Directory Name="errorpage" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\errorpage" RNP="0x9" DNP="0xb" UniqueId="0x1d03" Id="0000afb01d5583eef858f8ff93b0b809fc04c8658eb2" />
+            <Directory Name="showdetails" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\showdetails" RNP="0x9" DNP="0xb" UniqueId="0x1d18" Id="0000aa1b8ae1cb8779f19d9ee631c2e5e979ae2913e2" />
+            <Directory Name="pages" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages" RNP="0x9" DNP="0xb" UniqueId="0x1d02" Id="000019ff601290dc13568ff4c70ea07fd47a73f13ab3" />
+            <Directory Name="homelogged" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\homelogged" RNP="0x9" DNP="0xb" UniqueId="0x1d09" Id="0000f14dcfe35ae180e51f9b9ee2bb695c55f7abc72e" />
+            <Directory Name="js" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js" RNP="0x9" DNP="0xb" UniqueId="0x1cfa" Id="0000ed830a2cad918e620bb3cae846c3985ea8ddae26" />
+            <Directory Name="privacy" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\privacy" RNP="0x9" DNP="0xb" UniqueId="0x1d0f" Id="00008d3ed568bf181aa920a535ac45d7d18e4025082e" />
+            <Directory Name="seasonepisodes" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\seasonepisodes" RNP="0x9" DNP="0xb" UniqueId="0x1d15" Id="00006729c13b50c1deccfaf6076ead4cb9de77561486" />
+            <Directory Name="searchresults" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\searchresults" RNP="0x9" DNP="0xb" UniqueId="0x1d12" Id="00005959a0f73b66876b2fc11a0e8c2d42797f5ce487" />
+          </DirectoryIndicators>
+          <PackageManifestIndicator>
+            <PackageManifest PackageFullName="29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0" />
+            <Identity Name="29331ExPRESS.SeriesHub" Version="2.0.0.5" Publisher="CN=96AAC5CD-6AB5-4606-96E9-145E0BADAB77" ProcessorArchitecture="neutral" />
+            <Extension Category="windows.search" />
+            <Extension Category="windows.fileTypeAssociation">
+              <FileTypeAssociation Name="text-files">
+                <SupportedFileTypes>
+                  <FileType>.txt</FileType>
+                </SupportedFileTypes>
+              </FileTypeAssociation>
+            </Extension>
+            <Dependencies>
+              <PackageDependency Name="Microsoft.WinJS.1.0" MinVersion="1.0.9200.20602" />
+            </Dependencies>
+            <Properties>
+              <DisplayName>SeriesHub</DisplayName>
+              <PublisherDisplayName>ExPRESS</PublisherDisplayName>
+              <Logo>images\SeriesHubLogo50.png</Logo>
+            </Properties>
+            <Resources>
+              <Resource Language="EN-US" />
+            </Resources>
+            <Prerequisites>
+              <OSMinVersion>6.2.1</OSMinVersion>
+              <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+            </Prerequisites>
+            <Capabilities>
+              <Capability Name="internetClient" />
+            </Capabilities>
+          </PackageManifestIndicator>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000a1f85ab4808386c476320202b42c3127e6a35632">
+            <File Name="errorpage.html" Id="000006c2ba707cf8d1e61c181d830114346ea1def9f0" ShortName="ERRORP~1.HTM" Size="0x3e5" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\errorpage" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\errorpage\errorpage.html" LongPathHash="0000d9d850d46b6b23702bfc9176a22af9095a18934f" UniqueId="0x1d04" />
+            <File Name="data.js" Id="00002d0c08b46054dab93ba89c9f72116d63be8382a0" Size="0xf05" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js\data.js" LongPathHash="000079afa2f5ab4e32c20498fcd74bee943296bab785" UniqueId="0x1cfb" />
+            <File Name="models.js" Id="00009ecd87319950a39baf5d049e2a01a4a357321614" Size="0x28a" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js\models.js" LongPathHash="000061ab8c816955fc7ab73720e0bf66967b90ca0fdd" UniqueId="0x1cfd" />
+            <File Name="default.js" Id="0000313c267b1cb2d6ee2ea059f1134c7a555ecfd4d6" Size="0xf56" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js\default.js" LongPathHash="00008dc7523ab1ba46e48dc296474934fdd17ffc7e68" UniqueId="0x1cfc" />
+            <File Name="home.html" Id="00008d33b7cf32512b6c7e87f04b7311a3c53e5ac61b" ShortName="HOME~1.HTM" Size="0x842" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\home" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\home\home.html" LongPathHash="0000faf89284cc00c26be4e3fbee90e6dc40544a6417" UniqueId="0x1d07" />
+            <File Name="default.html" Id="000057ae6611de5659ccebcdf8d2e0297a24cae0e065" ShortName="DEFAUL~1.HTM" Size="0x84e" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\default.html" LongPathHash="0000234c6f3955ca1e3fdecc5c2dcb8c04890a20d765" UniqueId="0x1cf7" />
+            <File Name="viewmodels.js" Id="00001d318f3b2ed9ac84fc2036e9fcfcd769ae1e9333" ShortName="VIEWMO~1.JS" Size="0x22d8" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js\viewmodels.js" LongPathHash="0000b523347baa13ad540484d72ebebd7ea492e6439c" UniqueId="0x1cff" />
+            <File Name="navigator.js" Id="00001ed04bbe3daf1223648e4faf6af1b6e357bfb9c4" ShortName="NAVIGA~1.JS" Size="0x1928" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\js\navigator.js" LongPathHash="00008273c3515aad1ec1d77d3f862a2b9be422532e41" UniqueId="0x1cfe" />
+            <File Name="errorpage.js" Id="000035ee55c8e85289dd6a14128b9e1d5cbb7a34a0a2" ShortName="ERRORP~1.JS" Size="0x32e" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\errorpage" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\errorpage\errorpage.js" LongPathHash="00009c5c9d851aa23f3ebe208f5c1a273d6444fc4dad" UniqueId="0x1d05" />
+            <File Name="homelogged.js" Id="000017a4d51c58af5d52141f26adf00ba68cbf7870c6" ShortName="HOMELO~1.JS" Size="0x9ac" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\homelogged" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\homelogged\homelogged.js" LongPathHash="00000626c3fcca0dd83e39a6c57afc4a6aaf17c6d06b" UniqueId="0x1d0b" />
+            <File Name="showdetails.js" Id="000004351967f75ce98aa6168ba2d48fe29831752a76" ShortName="SHOWDE~1.JS" Size="0x938" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\showdetails" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\showdetails\showdetails.js" LongPathHash="0000acdd350d63bd1ad9199725a0009e5718c2d79823" UniqueId="0x1d1a" />
+            <File Name="showdetails.html" Id="0000ffd50616ab4bde6ccd0913ce33e1d2f9614da3bd" ShortName="SHOWDE~1.HTM" Size="0x107f" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\showdetails" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\showdetails\showdetails.html" LongPathHash="0000a8bbf5532c8aa44039a42db0866c38db10fd4fc9" UniqueId="0x1d19" />
+            <File Name="privacy.html" Id="00006a14c287bbcfb3d97514638432304892277d06ef" ShortName="PRIVAC~1.HTM" Size="0x12b2" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\privacy" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\privacy\privacy.html" LongPathHash="00002c8c5adf2bfd2a3d68117e087e30056c4809cb59" UniqueId="0x1d10" />
+            <File Name="seasonepisodes.js" Id="0000b8604d5ceca151a45e7604c62c7c093c21ce7cef" ShortName="SEASON~1.JS" Size="0x171a" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\seasonepisodes" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\seasonepisodes\seasonepisodes.js" LongPathHash="00008ef68ec5c655fbcb832386c4161347364b4df5ca" UniqueId="0x1d17" />
+            <File Name="seasonepisodes.html" Id="0000ead7d8043010e7be20e88fe6b77db029fba0460a" ShortName="SEASON~1.HTM" Size="0x7a4" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\seasonepisodes" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\seasonepisodes\seasonepisodes.html" LongPathHash="000041ad5901c6b43a24f624eb80b0242c27fecf48f2" UniqueId="0x1d16" />
+            <File Name="this-week.js" Id="00007051e795ed496cc10d410d52d420ab0b3b6b8e6b" ShortName="THIS-W~1.JS" Size="0x84a" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\this-week" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\this-week\this-week.js" LongPathHash="0000834b0fd643b615115aeab9df442f09a214ecb29b" UniqueId="0x1d1d" />
+            <File Name="searchresults.html" Id="0000e65f818baec67db127c0004e464b2b4d2d6b82bc" ShortName="SEARCH~1.HTM" Size="0x7dc" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\searchresults" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\searchresults\searchresults.html" LongPathHash="0000c924c70452cc4a5b94b81979c10ac039b27b0959" UniqueId="0x1d13" />
+            <File Name="this-week.html" Id="000006a12ee25b208219eede320ba6e3c7fc7e0ea735" ShortName="THIS-W~1.HTM" Size="0x791" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\this-week" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\this-week\this-week.html" LongPathHash="00008df5465c0faad77a5ba9ecbab4c459d80644a7e3" UniqueId="0x1d1c" />
+            <File Name="home.js" Id="0000f89ebd7c20baa0ff6b9571a8c5a9a31cc052dd25" Size="0x30d" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\home" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\home\home.js" LongPathHash="0000238ed886bedcd6ccffda67d54b648be15e37e930" UniqueId="0x1d08" />
+            <File Name="privacy.js" Id="0000adf4d85718458a36def2818e473db0389ba5d183" Size="0x32a" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\privacy" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\privacy\privacy.js" LongPathHash="00008c45b2a5bea49f2d1a36ad29a914c3a94a42a677" UniqueId="0x1d11" />
+            <File Name="loginsettings.js" Id="00007683e1b658d12e051ceae4d5a1477c5316ddfc13" ShortName="LOGINS~1.JS" Size="0x1085" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\loginsettings" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\loginsettings\loginsettings.js" LongPathHash="0000bba1aedc8b2165f4a669eba0bde6fa4afdb5e935" UniqueId="0x1d0e" />
+            <File Name="loginsettings.html" Id="00003d5fab13edd652c3ddd6bee8cfb26ebcfbb1c48e" ShortName="LOGINS~1.HTM" Size="0x89e" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\loginsettings" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\loginsettings\loginsettings.html" LongPathHash="00000383da0958ce117af110bc14c009bde54722a831" UniqueId="0x1d0d" />
+            <File Name="homelogged.html" Id="0000acb711242c418283c9d9b15c1fbb74c3091d4e5d" ShortName="HOMELO~1.HTM" Size="0x6d7" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\homelogged" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\homelogged\homelogged.html" LongPathHash="00008cabcbd180080aba260c98b8405ef520f99af817" UniqueId="0x1d0a" />
+            <File Name="searchresults.js" Id="0000e1250895c50151461961aafb99aa4b9a6008d045" ShortName="SEARCH~1.JS" Size="0x76b" BinaryType="UNKNOWN" Created="09/10/2013 09:10:31" Modified="09/10/2013 09:10:31" Path="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\searchresults" RNP="0xa" DNP="0x9" LowerCaseLongPath="c:\program files\windowsapps\29331express.serieshub_2.0.0.5_neutral__216h21f6mqzr0\pages\searchresults\searchresults.js" LongPathHash="00005044f482d74c4fb61219b27132db862d18ab9e87" UniqueId="0x1d14" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="000004c7d42877fa89b49d14f761edaa37eb00000904" AnalysisVersion="1.54" DictionaryVersion="1.6" Type="Package" Id="29331ExPRESS.SeriesHub_2.0.0.5_neutral__216h21f6mqzr0">
+      <AitFile ErrorCode="0" Name="showdetails.js" Id="000004351967f75ce98aa6168ba2d48fe29831752a76">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.processAll" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.Utilities.getContentWidth" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="this-week.html" Id="000006a12ee25b208219eede320ba6e3c7fc7e0ea735">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="errorpage.html" Id="000006c2ba707cf8d1e61c181d830114346ea1def9f0">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="homelogged.js" Id="000017a4d51c58af5d52141f26adf00ba68cbf7870c6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="viewmodels.js" Id="00001d318f3b2ed9ac84fc2036e9fcfcd769ae1e9333">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Binding.as" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.Promise" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="navigator.js" Id="00001ed04bbe3daf1223648e4faf6af1b6e357bfb9c4">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="data.js" Id="00002d0c08b46054dab93ba89c9f72116d63be8382a0">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.xhr" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.js" Id="0000313c267b1cb2d6ee2ea059f1134c7a555ecfd4d6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.populateSettings" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.showSettings" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="errorpage.js" Id="000035ee55c8e85289dd6a14128b9e1d5cbb7a34a0a2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="loginsettings.html" Id="00003d5fab13edd652c3ddd6bee8cfb26ebcfbb1c48e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.show" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.html" Id="000057ae6611de5659ccebcdf8d2e0297a24cae0e065">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.UI.AppBar" />
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="privacy.html" Id="00006a14c287bbcfb3d97514638432304892277d06ef">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout" />
+          <AitFeature Name="WinJS.UI.SettingsFlyout.show" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="this-week.js" Id="00007051e795ed496cc10d410d52d420ab0b3b6b8e6b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="loginsettings.js" Id="00007683e1b658d12e051ceae4d5a1477c5316ddfc13">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Security.Cryptography.BinaryStringEncoding.utf8" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.convertStringToBinary" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.encodeToHexString" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmNames.sha1" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmProvider.openAlgorithm" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+          <AitFeature Name="Windows.Storage.ApplicationDataCompositeValue" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="00008d33b7cf32512b6c7e87f04b7311a3c53e5ac61b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="models.js" Id="00009ecd87319950a39baf5d049e2a01a4a357321614">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Namespace.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="homelogged.html" Id="0000acb711242c418283c9d9b15c1fbb74c3091d4e5d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="privacy.js" Id="0000adf4d85718458a36def2818e473db0389ba5d183">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="seasonepisodes.js" Id="0000b8604d5ceca151a45e7604c62c7c093c21ce7cef">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Binding.processAll" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+          <AitFeature Name="Windows.Storage.FileIO.readTextAsync" />
+          <AitFeature Name="Windows.Storage.Pickers.FileOpenPicker" />
+          <AitFeature Name="Windows.UI.Notifications" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="searchresults.js" Id="0000e1250895c50151461961aafb99aa4b9a6008d045">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Application.addEventListener" />
+          <AitFeature Name="WinJS.Binding.optimizeBindingReferences" />
+          <AitFeature Name="WinJS.Binding.processAll" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI" />
+          <AitFeature Name="WinJS.Utilities" />
+          <AitFeature Name="Windows.ApplicationModel" />
+          <AitFeature Name="Windows.UI.ViewManagement.ApplicationViewState" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="searchresults.html" Id="0000e65f818baec67db127c0004e464b2b4d2d6b82bc">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="seasonepisodes.html" Id="0000ead7d8043010e7be20e88fe6b77db029fba0460a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.js" Id="0000f89ebd7c20baa0ff6b9571a8c5a9a31cc052dd25">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="showdetails.html" Id="0000ffd50616ab4bde6ccd0913ce33e1d2f9614da3bd">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS" />
+          <AitFeature Name="WinJS.1.0" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.UI.ListView" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

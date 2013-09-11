@@ -1,0 +1,25 @@
+﻿#this-week-title {
+    height: 200px;
+    overflow: hidden;
+    padding: 5px;
+    width: 390px;
+}
+
+.this-week section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .this-week section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .this-week section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

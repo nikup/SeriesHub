@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="29331ExPRESS.SeriesHub" Version="2.0.0.5" Publisher="CN=96AAC5CD-6AB5-4606-96E9-145E0BADAB77" />
+  <Properties>
+    <DisplayName>SeriesHub</DisplayName>
+    <PublisherDisplayName>ExPRESS</PublisherDisplayName>
+    <Logo>images\SeriesHubLogo50.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="SeriesHub" Logo="images\SeriesHubLogo150.png" SmallLogo="images\SeriesHubLogo30.png" Description="SeriesHub" ForegroundText="light" BackgroundColor="#da542c" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" WideLogo="images\SeriesHubLogo310.png" />
+        <SplashScreen Image="images\SeriesHubSplashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name="text-files">
+            <SupportedFileTypes>
+              <FileType>.txt</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>seasonepisodes</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="seasonepisodes.css" rel="stylesheet" />
+    <script src="seasonepisodes.js"></script>
+</head>
+<body>
+    <div id="season-episodes-container" data-win-control="WinJS.Binding.Template">
+        <div class="season-episodes-template list-view-position">
+            <div class="element-description-top">
+                <span>Episode </span>
+                <span data-win-bind="innerHTML: episode"></span>
+                <span data-win-bind="innerHTML: watched" style="float:right"></span>
+            </div>
+            <div class="list-view-image-episode-wrapper">
+                <img class="list-view-image-episode" src="#" data-win-bind="src: images.screen" />
+            </div>
+            <div data-win-bind="innerHTML: title" class="element-description-bottom"></div>
+        </div>
+    </div>
+
+    <div class="seasonepisodes fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Episodes</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div id="season-episodes-list-view" data-win-control="WinJS.UI.ListView"
+                data-win-options="{
+                    itemTemplate: select('#season-episodes-container'),
+                    selectionMode: 'single',
+                    tapBehavior: 'directSelect'
+                }">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

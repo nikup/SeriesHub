@@ -1,0 +1,26 @@
+﻿.hidden {
+    display: none;
+}
+
+#error-output {
+    color: red;
+}
+
+.loginsettings section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .loginsettings section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .loginsettings section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

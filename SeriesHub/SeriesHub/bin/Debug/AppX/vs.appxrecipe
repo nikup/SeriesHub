@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HARDISON</Machine>
+    <WindowsUser>Nikki</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>59AE2B683DFADB54BC6CB3CD170C5CF2EF04E5DCF95685429EE848290006D4A3</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>29331ExPRESS.SeriesHub_2.0.0.3_neutral__216h21f6mqzr0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>29331ExPRESS.SeriesHub_216h21f6mqzr0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>29331ExPRESS.SeriesHub</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=96AAC5CD-6AB5-4606-96E9-145E0BADAB77</RegisteredPackagePublisher>
+    <RegisteredVersion>2.0.0.3</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Code\mnementh\SeriesHub\SeriesHub\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-09-10T08:48:24.187</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-09-03T15:42:49.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\errorpage\errorpage.css">
+      <PackagePath>pages\errorpage\errorpage.css</PackagePath>
+      <Modified>2013-09-09T11:57:56.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\homelogged\homelogged.css">
+      <PackagePath>pages\homelogged\homelogged.css</PackagePath>
+      <Modified>2013-09-02T17:02:38.357</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2013-08-30T12:03:57.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\loginsettings\loginsettings.css">
+      <PackagePath>pages\loginsettings\loginsettings.css</PackagePath>
+      <Modified>2013-09-01T21:23:09.259</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\searchresults\searchresults.css">
+      <PackagePath>pages\searchresults\searchresults.css</PackagePath>
+      <Modified>2013-09-01T21:23:09.455</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\seasonepisodes\seasonepisodes.css">
+      <PackagePath>pages\seasonepisodes\seasonepisodes.css</PackagePath>
+      <Modified>2013-09-02T17:02:38.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\showdetails\showdetails.css">
+      <PackagePath>pages\showdetails\showdetails.css</PackagePath>
+      <Modified>2013-09-03T10:26:06.076</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\this-week\this-week.css">
+      <PackagePath>pages\this-week\this-week.css</PackagePath>
+      <Modified>2013-09-03T15:20:38.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\fav_heart.png">
+      <PackagePath>images\fav_heart.png</PackagePath>
+      <Modified>2013-09-01T21:46:15.225</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <Modified>2013-08-30T12:03:57.700</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\SeriesHubLogo150.png">
+      <PackagePath>images\SeriesHubLogo150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-30T13:49:12.360</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\SeriesHubLogo30.png">
+      <PackagePath>images\SeriesHubLogo30.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-30T13:42:00.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\SeriesHubLogo310.png">
+      <PackagePath>images\SeriesHubLogo310.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-30T14:46:37.042</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\SeriesHubLogo50.png">
+      <PackagePath>images\SeriesHubLogo50.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-30T13:49:55.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\SeriesHubSplashScreen.png">
+      <PackagePath>images\SeriesHubSplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-30T13:42:56.779</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <Modified>2013-08-30T12:03:57.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <Modified>2013-08-30T12:03:57.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <Modified>2013-08-30T12:03:57.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\images\trakt-logo.png">
+      <PackagePath>images\trakt-logo.png</PackagePath>
+      <Modified>2013-09-01T21:23:09.248</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+      <Modified>2013-09-09T11:57:56.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-09-04T12:02:51.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\js\models.js">
+      <PackagePath>js\models.js</PackagePath>
+      <Modified>2013-09-03T07:47:23.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-08-30T12:03:57.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\js\viewmodels.js">
+      <PackagePath>js\viewmodels.js</PackagePath>
+      <Modified>2013-09-09T11:57:56.829</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\errorpage\errorpage.js">
+      <PackagePath>pages\errorpage\errorpage.js</PackagePath>
+      <Modified>2013-09-09T11:57:56.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\homelogged\homelogged.js">
+      <PackagePath>pages\homelogged\homelogged.js</PackagePath>
+      <Modified>2013-09-03T15:20:38.844</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2013-09-01T21:23:09.234</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\loginsettings\loginsettings.js">
+      <PackagePath>pages\loginsettings\loginsettings.js</PackagePath>
+      <Modified>2013-09-04T11:17:49.228</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\searchresults\searchresults.js">
+      <PackagePath>pages\searchresults\searchresults.js</PackagePath>
+      <Modified>2013-09-02T17:02:37.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\seasonepisodes\seasonepisodes.js">
+      <PackagePath>pages\seasonepisodes\seasonepisodes.js</PackagePath>
+      <Modified>2013-09-04T12:09:00.625</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\showdetails\showdetails.js">
+      <PackagePath>pages\showdetails\showdetails.js</PackagePath>
+      <Modified>2013-09-03T13:24:05.631</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\this-week\this-week.js">
+      <PackagePath>pages\this-week\this-week.js</PackagePath>
+      <Modified>2013-09-03T15:20:38.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\errorpage\errorpage.html">
+      <PackagePath>pages\errorpage\errorpage.html</PackagePath>
+      <Modified>2013-09-09T11:57:56.291</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\homelogged\homelogged.html">
+      <PackagePath>pages\homelogged\homelogged.html</PackagePath>
+      <Modified>2013-09-03T14:01:50.183</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2013-09-03T11:01:07.127</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-09-03T20:31:28.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\loginsettings\loginsettings.html">
+      <PackagePath>pages\loginsettings\loginsettings.html</PackagePath>
+      <Modified>2013-09-03T13:39:35.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\searchresults\searchresults.html">
+      <PackagePath>pages\searchresults\searchresults.html</PackagePath>
+      <Modified>2013-09-02T17:02:37.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\seasonepisodes\seasonepisodes.html">
+      <PackagePath>pages\seasonepisodes\seasonepisodes.html</PackagePath>
+      <Modified>2013-09-03T11:06:45.695</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\showdetails\showdetails.html">
+      <PackagePath>pages\showdetails\showdetails.html</PackagePath>
+      <Modified>2013-09-03T11:07:55.467</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\pages\this-week\this-week.html">
+      <PackagePath>pages\this-week\this-week.html</PackagePath>
+      <Modified>2013-09-03T14:01:52.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Code\mnementh\SeriesHub\SeriesHub\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-09-10T08:48:23.755</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20602</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20602</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+D:\Code\mnementh\SeriesHub\SeriesHub\bin\Release\resources.pri
+D:\Code\mnementh\SeriesHub\SeriesHub\bin\Release\AppxManifest.xml
+D:\Code\mnementh\SeriesHub\SeriesHub\bin\Release\SeriesHub.build.appxrecipe
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\priconfig.xml.intermediate
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\layout.resfiles.intermediate
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\resources.resfiles.intermediate
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\pri.resfiles.intermediate
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\priconfig.xml
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\layout.resfiles
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\resources.resfiles
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\pri.resfiles
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\LanguageQualifiers.txt
+D:\Code\mnementh\SeriesHub\SeriesHub\bld\Release\ProjectArchitectures.txt
